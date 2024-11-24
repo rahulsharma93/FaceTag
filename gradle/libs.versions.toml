@@ -8,6 +8,8 @@ espressoCore = "3.6.1"
 lifecycleRuntimeKtx = "2.8.7"
 activityCompose = "1.9.3"
 composeBom = "2023.08.00"
+appcompat = "1.7.0"
+recyclerview = "1.3.2"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -24,8 +26,19 @@ androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-toolin
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version = "2.48" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version = "2.48" }
+glide-android = { group = "com.github.bumptech.glide", name = "glide-android", version = "4.15.1" }
+glide-compiler = { group = "com.github.bumptech.glide", name = "glide-compiler", version = "4.15.1" }
+recyclerview-android = { group = "androidx.recyclerview:recyclerview", name ="recyclerview-android", version = "1.3.1" }
+appcompat-android = { group = "androidx.appcompat:appcompat", name ="appcompat-android", version = "1.7.0" }
+viewmodel-android = { group = "androidx.lifecycle:lifecycle-viewmodel-ktx", name ="viewmodel-android", version ="2.6.2" }
+livedata-android = { group = "androidx.lifecycle:lifecycle-livedata-ktx", name ="livedata-android", version ="2.6.2" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+hilt = { id = "com.google.dagger.hilt.android", version = "2.48" }
 
